@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "standardx -v \"./**/*.ts\"",
     "build-tests": "esbuild test/index.ts --bundle --format=cjs --keep-names > test/test-bundle.js",
-    "test": "npm run lint && npm run build && npm run build-tests && npm run test-tape-run",
+    "test": "npm run lint && npm run build && npm run build-tests && esbuild test/index.ts --bundle | node | tap-arc",
     "test-tape-run": "cat test/index.html | tape-run --input=html --static=test | tap-arc",
     "build-example": "mkdir -p ./public && rm -rf ./public/* && vite build --base=./",
     "build": "mkdir -p ./dist && rm -rf ./dist/* && tsc --project tsconfig.build.json",
