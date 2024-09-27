@@ -30,9 +30,9 @@
     "postcss-nesting": "^12.0.1",
     "standardx": "^7.0.0",
     "tap-arc": "^0.3.5",
-    "tape-run": "^10.0.0",
+    "tape-run": "^11.0.0",
     "typescript": "^5.0.2",
-    "vite": "^4.4.9"
+    "vite": "^4.5.5"
   },
   "author": "nichoth <nichoth@gmail.com> (https://nichoth.com)",
   "license": "AGPL-3.0-or-later"
